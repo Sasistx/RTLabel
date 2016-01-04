@@ -271,15 +271,15 @@
 				}
 				else
 				{
-					[self applyBoldStyleToText:attrString atPosition:component.position withLength:[component.text length]];
 					[self applySingleUnderlineText:attrString atPosition:component.position withLength:[component.text length]];
 				}
 			}
 			
-			NSString *value = [component.attributes objectForKey:@"href"];
-			value = [value stringByReplacingOccurrencesOfString:@"'" withString:@""];
-			[component.attributes setObject:value forKey:@"href"];
-			
+			if ([component.attributes objectForKey:@"href"]){
+				NSString *value = [component.attributes objectForKey:@"href"];
+				value = [value stringByReplacingOccurrencesOfString:@"'" withString:@""];
+				[component.attributes setObject:value forKey:@"href"];
+			}
 			[links addObject:component];
 		}
 		else if ([component.tagLabel caseInsensitiveCompare:@"u"] == NSOrderedSame || [component.tagLabel caseInsensitiveCompare:@"uu"] == NSOrderedSame)

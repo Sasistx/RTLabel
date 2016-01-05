@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RTLabel"
-  s.version      = "0.0.1"
+  s.version      = "2.0.0"
   s.summary      = "A short description of RTLabel."
 
   s.description  = <<-DESC

@@ -183,7 +183,7 @@
 
 - (void)render
 {
-	if (self.currentSelectedButtonComponentIndex==-1)
+	if (self.currentSelectedButtonComponentIndex == -1)
 	{
 		for (id view in [self subviews])
 		{
@@ -332,7 +332,7 @@
 	self.optimumSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0, [self.plainText length]), nil, constraint, &range);
 	
 	
-	if (self.currentSelectedButtonComponentIndex==-1)
+	if (self.currentSelectedButtonComponentIndex == -1)
 	{
 		// only check for linkable items the first time, not when it's being redrawn on button pressed
 		
@@ -690,7 +690,7 @@
 {
 	
 	value = [value stringByReplacingOccurrencesOfString:@"'" withString:@""];
-	if ([value rangeOfString:@"#"].location==0) {
+	if ([value rangeOfString:@"#"].location == 0) {
         CGColorSpaceRef rgbColorSpace = CGColorSpaceCreateDeviceRGB();
 		value = [value stringByReplacingOccurrencesOfString:@"#" withString:@"0x"];
 		NSArray *colorComponents = [self colorForHex:value];

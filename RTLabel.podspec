@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RTLabel"
-  s.version      = "2.0.0"
+  s.version      = "3.0.0"
   s.summary      = "A short description of RTLabel."
 
   s.description  = <<-DESC
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "RTLabelProject/Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "RTLabel/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

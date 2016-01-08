@@ -489,7 +489,9 @@
 	CTParagraphStyleRef theParagraphRef = CTParagraphStyleCreate(theSettings, sizeof(theSettings) / sizeof(CTParagraphStyleSetting));
 	CFDictionaryAddValue( styleDict, kCTParagraphStyleAttributeName, theParagraphRef );
 	
-	CFAttributedStringSetAttributes( text, CFRangeMake(position, length), styleDict, 0 ); 
+	CFAttributedStringSetAttributes( text, CFRangeMake(position, length), styleDict, 0 );
+	
+	CFRelease(theSettings);
 	CFRelease(theParagraphRef);
     CFRelease(styleDict);
 }

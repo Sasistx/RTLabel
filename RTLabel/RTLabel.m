@@ -491,7 +491,7 @@
 	
 	CFAttributedStringSetAttributes( text, CFRangeMake(position, length), styleDict, 0 );
 	
-	CFRelease(theSettings);
+//	CFRelease(theSettings);
 	CFRelease(theParagraphRef);
     CFRelease(styleDict);
 }

@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "RTLabel"
   s.version      = "3.0.0"
-  s.summary      = "A short description of RTLabel."
+  s.summary      = "春雨自用的RTLabel fork. 修复了原repo的一些问题"
 
   s.description  = <<-DESC
                    A longer description of RTLabel in Markdown format.

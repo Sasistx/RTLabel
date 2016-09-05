@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git=>"https://git.coding.net/lianweiqin/RTLabel.git", :branch => "master" }
+  s.source       = { :git=>"https://git.coding.net/PandaCashBoxiOS/RTLabel.git", :branch => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
